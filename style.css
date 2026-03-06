@@ -1,21 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
-/* * {
+/* || RESET */
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
- */
+/* || VARIABLES */
+:root {
+  /* COLOURS */
+  --bgcolor: hsl(212, 45%, 89%);
+  --pcolor: hsl(216, 15%, 48%);
+  --hdcolor: hsl(218, 44%, 22%);
+  --ftcolor: hsl(228, 45%, 44%);
+  /* FONT */
+  --fntfam: "Outfit";
+}
+
+/* || GENEREAL STYLES */
+body {
+  background-color: var(--bgcolor);
+  font-family: var(--fntfam);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* ||MEDIA QUERIES */
 @media screen and (min-width: 1440px) {
-  body {
-    background-color: hsl(212, 45%, 89%);
-    font-family: "Outfit";
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
   .qr-code-container {
     display: flex;
     flex-direction: column;
@@ -48,7 +63,8 @@
     text-align: center;
     line-height: 120%;
     margin-bottom: 16px;
-    color: hsl(218, 44%, 22%);
+    color: var(--hdcolor);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.111);
   }
   .qr-code-description {
     font-size: 15px;
@@ -57,7 +73,7 @@
     height: 63px;
     text-align: center;
     line-height: 150%;
-    color: hsl(216, 15%, 48%);
+    color: var(--pcolor);
   }
   .attribution {
     margin-top: 20px;
@@ -66,19 +82,10 @@
     text-align: center;
   }
   .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--ftcolor);
   }
 }
 @media screen and (min-width: 375px) {
-  body {
-    background-color: hsl(212, 45%, 89%);
-    font-family: "Outfit";
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
   .qr-code-container {
     display: flex;
     flex-direction: column;
@@ -111,7 +118,8 @@
     text-align: center;
     line-height: 120%;
     margin-bottom: 16px;
-    color: hsl(218, 44%, 22%);
+    color: var(--hdcolor);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.111);
   }
   .qr-code-description {
     font-size: 15px;
@@ -120,7 +128,7 @@
     height: 63px;
     text-align: center;
     line-height: 150%;
-    color: hsl(216, 15%, 48%);
+    color: var(--pcolor);
   }
   .attribution {
     margin-top: 20px;
@@ -129,6 +137,24 @@
     text-align: center;
   }
   .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--ftcolor);
+  }
+}
+
+a:any-link {
+  color: blue;
+  text-decoration: none;
+}
+/* || DARK MODE */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bgcolor: rgba(0, 0, 0, 0.806);
+    --ftcolor: white;
+  }
+  .attribution {
+    color: white;
+  }
+  a:any-link {
+    color: white;
   }
 }
