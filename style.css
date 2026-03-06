@@ -146,7 +146,7 @@ a:any-link {
   text-decoration: none;
 }
 /* || DARK MODE */
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --bgcolor: rgba(0, 0, 0, 0.806);
     --ftcolor: white;
