@@ -1,5 +1,7 @@
 # Frontend Mentor - QR code component solution
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b4ada093-e114-4a34-b93d-3a9ed1d5508c/deploy-status)](https://app.netlify.com/projects/front-qr-component/deploys)
+
 This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
@@ -28,7 +30,7 @@ This is a screenshot of the QR code component solution.
 ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/jessecharles123/qr-code-component)
-- Live Site URL: [GitHub Pages](https://jessecharles123.github.io/qr-code-component/)
+- Live Site URL: [Netlify](https://front-qr-component.netlify.app/)
 
 ## My process
 
